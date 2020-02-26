@@ -13,8 +13,11 @@ defmodule LogisticMapBench do
     |> PelemaySample.flow_logistic_map
   end
 
+  # NOTE: Enum.to_list should be needed
   bench "Pelemay" do
     @range_0x1000
+    |> Enum.to_list
     |> PelemaySample.logistic_map
   end
+
 end

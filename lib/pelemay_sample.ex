@@ -2,6 +2,9 @@ defmodule PelemaySample do
   import Pelemay
   require Pelemay
 
+  import Pelemay_CL
+  require Pelemay_CL
+
   @moduledoc """
   ```elixir
   defpelemay do
@@ -19,7 +22,9 @@ defmodule PelemaySample do
   end
   ```
   """
-  defpelemay do
+  # NOTE: currently we could not treat defpelemay and defpelemaycl macros at same time
+  #defpelemay do
+  defpelemaycl do
     def list_minus_2(list) do
       list
       |> Enum.map(&(&1 - 2))
@@ -62,6 +67,25 @@ defmodule PelemaySample do
       |> Enum.map(&rem(22 * &1 * (&1 + 1), 6_700_417))
     end
   end
+ 
+  # NOTE: currently we could not treat defpelemay and defpelemaycl macros at same time
+  """
+  defpelemaycl do
+    def ocl_logistic_map(list) do
+      list
+      |> Enum.map(&rem(22 * &1 * (&1 + 1), 6_700_417))
+      |> Enum.map(&rem(22 * &1 * (&1 + 1), 6_700_417))
+      |> Enum.map(&rem(22 * &1 * (&1 + 1), 6_700_417))
+      |> Enum.map(&rem(22 * &1 * (&1 + 1), 6_700_417))
+      |> Enum.map(&rem(22 * &1 * (&1 + 1), 6_700_417))
+      |> Enum.map(&rem(22 * &1 * (&1 + 1), 6_700_417))
+      |> Enum.map(&rem(22 * &1 * (&1 + 1), 6_700_417))
+      |> Enum.map(&rem(22 * &1 * (&1 + 1), 6_700_417))
+      |> Enum.map(&rem(22 * &1 * (&1 + 1), 6_700_417))
+      |> Enum.map(&rem(22 * &1 * (&1 + 1), 6_700_417))
+    end
+  end
+  """
 
   def enum_logistic_map(list) do
     list
