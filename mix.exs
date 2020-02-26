@@ -22,7 +22,9 @@ defmodule PelemaySample.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:pelemay, "~> 0.0.5"},
+      # Note: we use OpenCL ready version of Pelemay
+      # {:pelemay, "~> 0.0.5"},
+      {:pelemay, git: "https://github.com/tlk-emb/pelemay_opencl.git", branch: "opencl"},
 
       # Benchmark dependencies
       # {:benchfella, "~> 0.3.5"},

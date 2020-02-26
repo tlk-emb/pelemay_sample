@@ -1,6 +1,7 @@
 %{
   "benchfella": {:hex, :benchfella, "0.3.5", "b2122c234117b3f91ed7b43b6e915e19e1ab216971154acd0a80ce0e9b8c05f5", [:mix], [], "hexpm"},
-  "flow": {:hex, :flow, "0.14.3", "0d92991fe53035894d24aa8dec10dcfccf0ae00c4ed436ace3efa9813a646902", [:mix], [{:gen_stage, "~> 0.14.0", [hex: :gen_stage, repo: "hexpm", optional: false]}], "hexpm"},
-  "gen_stage": {:hex, :gen_stage, "0.14.2", "6a2a578a510c5bfca8a45e6b27552f613b41cf584b58210f017088d3d17d0b14", [:mix], [], "hexpm"},
-  "pelemay": {:hex, :pelemay, "0.0.5", "921eea11da60d556a9ed732b9c759bdcdeec3f578425ad1bae53dcbab1426e93", [:mix], [], "hexpm"},
+  "flow": {:hex, :flow, "0.14.3", "0d92991fe53035894d24aa8dec10dcfccf0ae00c4ed436ace3efa9813a646902", [:mix], [{:gen_stage, "~> 0.14.0", [hex: :gen_stage, repo: "hexpm", optional: false]}], "hexpm", "da6177f8d04f663a2894e38f9b55b293c69cb230c60f81bb8c090eb713aa4a45"},
+  "gen_stage": {:hex, :gen_stage, "0.14.2", "6a2a578a510c5bfca8a45e6b27552f613b41cf584b58210f017088d3d17d0b14", [:mix], [], "hexpm", "1f201083ca2ee1ea2b8e1eb6e98d9842ef93f2e5efa2d602740ab0c56c2bc90b"},
+  "pelemay": {:git, "https://github.com/tlk-emb/pelemay_opencl.git", "e8b3f732a33ad5941019ac93aaafd9d7c4c5ac46", [branch: "opencl"]},
+  "pelemay_opencl": {:git, "https://github.com/tlk-emb/pelemay_opencl", "0d8ae4a9c7a20996285fa3ea80dbcf1134e1107d", [branch: "opencl"]},
 }
